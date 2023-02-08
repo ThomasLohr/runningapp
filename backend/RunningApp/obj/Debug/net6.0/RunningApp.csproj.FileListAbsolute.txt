@@ -1,0 +1,164 @@
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.csproj.AssemblyReference.cache
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.AssemblyInfoInputs.cache
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.AssemblyInfo.cs
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.csproj.CoreCompileInputs.cache
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.MvcApplicationPartsAssemblyInfo.cs
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.MvcApplicationPartsAssemblyInfo.cache
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\appsettings.Development.json
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\appsettings.json
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\RunningApp.exe
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\RunningApp.deps.json
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\RunningApp.runtimeconfig.json
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\RunningApp.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\RunningApp.pdb
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\staticwebassets.build.json
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\staticwebassets.development.json
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\scopedcss\bundle\RunningApp.styles.css
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.csproj.CopyComplete
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\ref\RunningApp.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.pdb
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\RunningApp.genruntimeconfig.cache
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\obj\Debug\net6.0\refint\RunningApp.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Azure.Core.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Azure.Identity.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Humanizer.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\Mono.TextTemplating.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.CodeDom.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Memory.Data.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Text.Json.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\devs\React exercises\runningApp\webapi\RunningApp\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\appsettings.Development.json
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\appsettings.json
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\RunningApp.exe
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\RunningApp.deps.json
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\RunningApp.runtimeconfig.json
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\RunningApp.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\RunningApp.pdb
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Azure.Core.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Azure.Identity.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Humanizer.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Mono.TextTemplating.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.CodeDom.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Memory.Data.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Text.Json.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.csproj.AssemblyReference.cache
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.AssemblyInfoInputs.cache
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.AssemblyInfo.cs
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.csproj.CoreCompileInputs.cache
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.MvcApplicationPartsAssemblyInfo.cs
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.MvcApplicationPartsAssemblyInfo.cache
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\staticwebassets.build.json
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\staticwebassets.development.json
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\scopedcss\bundle\RunningApp.styles.css
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.csproj.CopyComplete
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\refint\RunningApp.dll
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.pdb
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\RunningApp.genruntimeconfig.cache
+E:\devs\Projects\RunningApp\backend\RunningApp\obj\Debug\net6.0\ref\RunningApp.dll
