@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace RunningApp.Models;
 
 public partial class Time
 {
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id { get; set; }
-
-    public string? Firstname { get; set; }
+    public int? Id { get; set; }
+    
+    public string Firstname { get; set; }
 
     public string? Lastname { get; set; } 
 
@@ -18,12 +19,13 @@ public partial class Time
 
     public decimal? Rundistance { get; set; }
 
-    public string? TotalTime { get; set; }
+    public string TotalTime { get; set; }
 
 
 
-    public Time(string firstName, string lastName, int age, string totalTime, decimal runDistance)
+    public Time(int id, string firstName, string lastName, int age, string totalTime, decimal runDistance)
     {
+        Id = id;
         Firstname = firstName;
         Lastname = lastName;
         Age = age;
