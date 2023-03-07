@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RunningApp.Models;
+using RunningApp.Repository;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,53 @@ namespace RunningApp.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        // GET: api/<UserController>
+        private UserRepository _userRepository;
+        public UserController()
+        {
+           _userRepository = new UserRepository();
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<User> GetUsers()
         {
-            return new string[] { "value1", "value2" };
+            return _userRepository.GetUsers();
+
         }
 
-        // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult GetUser(int id)
         {
-            return "value";
+            var getUser = _userRepository.GetUser(id);
+
+            return Ok(getUser);
         }
 
-        // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult CreateUser(User user)
         {
+            _userRepository.CreateUser(user);
+            return Ok(user);
         }
 
-        // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public IActionResult UpdateUser(User user)
         {
+            _userRepository.UpdateUser(user);
+            return Ok(user);
+
+
         }
 
-        // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult DeleteUser(int id)
         {
+            var deleteUser = _userRepository.DeleteUser(id);
+
+            if (deleteUser == null)
+            {
+                return NotFound();
+            }
+            return Ok(deleteUser);
         }
     }
 }

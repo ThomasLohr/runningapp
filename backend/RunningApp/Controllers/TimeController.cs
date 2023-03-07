@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RunningApp.Models;
+using RunningApp.Repository;
 using System.Net.WebSockets;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,74 +13,57 @@ namespace RunningApp.Controllers
     public class TimeController : ControllerBase
     {
 
-        private List<Time> _times;
+        private TimeRepository _timeRepository;
 
-        private RunningDbContext _dbContext;
-
-        public TimeController()
+        //public TimeController(TimeRepository timeRepository)
+        //{
+        //    _timeRepository = timeRepository; 
+            
+        //}
+        public TimeController(TimeRepository timeRepository)
         {
-            _times = new List<Time>();
-            _dbContext = new RunningDbContext();
-
+            _timeRepository = timeRepository;
         }
 
         [HttpGet]
         public IEnumerable<Time> GetTimes()
         {
-            return _dbContext.Times;
+            return _timeRepository.GetTimes();
         }
 
         [HttpGet]
         [Route("{id}")]
         public IActionResult GetTime(int id)
         {
-            var getTime = _dbContext.Times.FirstOrDefault(x => x.Id == id);
-
-            _dbContext.SaveChanges();
+            var getTime = _timeRepository.GetTime(id);
 
             return Ok(getTime);
         }
 
-
-
         [HttpPost]
-        public IActionResult Post(Time newTime)
+        public IActionResult CreateTime(Time newTime)
         {
-            _dbContext.Times.Add(newTime);
-            _dbContext.SaveChanges();
-
-            return Ok(); 
+            var createTime = _timeRepository.CreateTime(newTime);
+            
+            return Ok(createTime); 
         }
 
         [HttpDelete]
-        
-        public IActionResult Delete(int? id)
+        public IActionResult DeleteTime(int? id)
         {
-            if (id == null)
-            {
-                return NotFound("id was null");
-            }
+            var timeToBeDeleted = _timeRepository.DeleteTime(id);
 
-            var timeToDel = _dbContext.Times.FirstOrDefault(x => x.Id == id);
-
-            if (timeToDel == null)
-            {
-                return NotFound("could not find time");
-            }
-            _dbContext.Times.Remove(timeToDel);
-            _dbContext.SaveChanges();
-
-            return Ok();
+            return Ok(timeToBeDeleted);
 
         }
         [HttpPut]
         [Route("{id}")]
-        public void Update(Time time, int id)
+        public IActionResult UpdateTime(Time time, int id)
         {
-            time.Id= id;
-           
-            _dbContext.Times.Update(time);
-            _dbContext.SaveChanges();
+            var timeToBeUpdated = _timeRepository.UpdateTime(time, id);
+
+            return Ok(timeToBeUpdated);
+            
         }
 
     }
