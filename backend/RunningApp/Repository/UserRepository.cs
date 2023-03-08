@@ -7,9 +7,10 @@ namespace RunningApp.Repository
     {
 
         private RunningDbContext _dbContext;
-        public UserRepository()
+
+        public UserRepository(RunningDbContext runningDbContext)
         {
-            _dbContext = new RunningDbContext();
+            _dbContext = runningDbContext;
         }
 
         public IEnumerable<User> GetUsers()

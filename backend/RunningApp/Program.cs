@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<RunningDbContext, RunningDbContext>();
 builder.Services.AddTransient<TimeRepository, TimeRepository>();
+builder.Services.AddTransient<UserRepository, UserRepository>();
 
 
 builder.Services.AddCors(options =>
