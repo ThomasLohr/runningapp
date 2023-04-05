@@ -31,9 +31,6 @@ public partial class RunningDbContext : DbContext
                 .ToTable("Time");
 
             entity.Property(e => e.Id).ValueGeneratedOnAdd();
-            entity.Property(e => e.Firstname)
-                .HasMaxLength(50)
-                .IsUnicode(false);
             entity.Property(e => e.TotalTime)
                 .HasMaxLength(50)
                 .IsUnicode(false);

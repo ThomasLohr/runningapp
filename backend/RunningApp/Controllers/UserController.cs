@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using RunningApp.Models;
 using RunningApp.Repository;
 
@@ -11,11 +12,12 @@ namespace RunningApp.Controllers
     public class UserController : ControllerBase
     {
         private UserRepository _userRepository;
-        public UserController()
+        
+        public UserController(UserRepository userRepository)
         {
-           _userRepository = new UserRepository();
+            _userRepository = userRepository;
         }
-
+     
         [HttpGet]
         public IEnumerable<User> GetUsers()
         {

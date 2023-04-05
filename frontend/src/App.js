@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Navbar.js'
+import GetTime from './GetTime.js'
+import GetUser from './GetUser.js'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="content">
+                <Navbar />
+                <h1 className="title">Running App</h1>
+                <GetTime/>
+                <GetUser/>
+                
+            </div>
+        </div>
+    )
 }
 
-export default App;
+export default App

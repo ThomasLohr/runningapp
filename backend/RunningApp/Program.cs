@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using RunningApp.Models;
 using RunningApp.Repository;
 
@@ -11,7 +13,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<RunningDbContext, RunningDbContext>();
+builder.Services.AddDbContext<RunningDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApiDatabase"), sqlServerOptions =>
+    {
+
+    });
+});
 builder.Services.AddTransient<TimeRepository, TimeRepository>();
 builder.Services.AddTransient<UserRepository, UserRepository>();
 

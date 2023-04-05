@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RunningApp.DTO;
 using RunningApp.Models;
 using RunningApp.Repository;
 using System.Net.WebSockets;
@@ -41,13 +42,14 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTime(Time newTime)
+        public IActionResult CreateTime(TimeDTO dto)
         {
-            var createTime = _timeRepository.CreateTime(newTime);
-            
+            var time = CreateTimeFromDTO(dto);
+            var createTime = _timeRepository.CreateTime(time);
+           
             return Ok(createTime); 
         }
-
+       
         [HttpDelete]
         public IActionResult DeleteTime(int? id)
         {
@@ -64,6 +66,16 @@ namespace RunningApp.Controllers
 
             return Ok(timeToBeUpdated);
             
+        }
+
+        private Time CreateTimeFromDTO(TimeDTO dto)
+        {
+            var time = new Time();
+
+            time.TotalTime = dto.TotalTime ?? "";
+            time.Rundistance= dto.Rundistance ?? 0;
+
+            return time;
         }
 
     }
