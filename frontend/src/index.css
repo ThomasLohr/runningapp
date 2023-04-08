@@ -1,13 +1,16 @@
-.title {
-    text-align: center;
-}
-.list-row{
-    text-align: center;
-}
-.links{
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+
+.title{
+    font-weight: 800;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
     
-    margin-left: 75%;
-}
-.home-route{
-    margin: 10px;
-}
+};
