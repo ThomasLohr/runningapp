@@ -4,13 +4,48 @@
 
 @tailwind utilities;
 
-
-
-
-.title{
-    font-weight: 800;
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
-};
+}
+html, body{
+    height: 100%;
+}
+
+/*HEADER COMPONENT*/
+.header > h1 {
+    text-align: center;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.header {
+    background-color: beige;
+    width: 100%;
+    height: 100px;
+    
+      
+}
+/*NAVBAR COMPONENT*/
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+.time-list {
+    display: flex;
+    justify-content: center;
+}
+
+.time-row{
+    border-bottom: 1px solid black;
+}
+
+    
+
+    
+
+
+

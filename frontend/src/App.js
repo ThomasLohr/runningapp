@@ -1,14 +1,12 @@
-import Navbar from './Navbar.js'
-import GetTime from './GetTime.js'
+import TimeList from './TimeList.js'
 import GetUser from './GetUser.js'
 import Header from './Header.js'
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <Header />
-            <GetTime />
-            <GetUser />
+            <TimeList />
         </div>
     )
 }

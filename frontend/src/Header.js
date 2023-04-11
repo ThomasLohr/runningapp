@@ -1,11 +1,12 @@
-import Navbar from "./Navbar"
+import Navbar from './Navbar'
 
 const Header = () => {
     return (
-        <header className="title">
-            <h1 className="app-name">Running App</h1>
-            <Navbar/>
-        </header>
+        <div className="header">
+            <Navbar />
+            <h1 className="title">Running App</h1>
+            
+        </div>
     )
 }
 
