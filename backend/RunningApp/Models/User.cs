@@ -16,6 +16,7 @@ namespace RunningApp.Models
       
         public int? Age { get; set; }
 
+
         public User(int? id, string? userName, string? email, string? firstName, string? lastName, int? age)
         {
             Id = id;

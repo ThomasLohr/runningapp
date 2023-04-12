@@ -24,24 +24,22 @@ namespace RunningApp.Migrations
 
             modelBuilder.Entity("RunningApp.Models.Time", b =>
                 {
-                    b.Property<int?>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<decimal?>("Rundistance")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("TotalTime")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Time", (string)null);
+                    b.ToTable("Times");
                 });
 
             modelBuilder.Entity("RunningApp.Models.User", b =>

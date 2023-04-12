@@ -8,8 +8,8 @@ namespace RunningApp.Models;
 
 public partial class Time
 {
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int? Id { get; set; }
+  
+    public int Id { get; set; }
 
     public decimal? Rundistance { get; set; }
 

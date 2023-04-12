@@ -25,18 +25,12 @@ public partial class RunningDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Time>(entity =>
-        {
-            entity
-                .ToTable("Time");
 
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
-            entity.Property(e => e.TotalTime)
-                .HasMaxLength(50)
-                .IsUnicode(false);
+        modelBuilder.Entity<Time>()
+                .HasKey(s => s.Id);
 
-           
-        });
+        modelBuilder.Entity<User>()
+                .HasKey(s => s.Id);
 
         OnModelCreatingPartial(modelBuilder);
     }
