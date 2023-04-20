@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using RunningApp.DTO;
 using RunningApp.Models;
 using RunningApp.Repository;
 
@@ -34,10 +35,12 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser(User user)
+        public IActionResult CreateUser(UserDTO dto)
         {
-            _userRepository.CreateUser(user);
-            return Ok(user);
+            var user = CreateUserFromDTO(dto);
+            var createUser = _userRepository.CreateUser(user);
+
+            return Ok(createUser);
         }
 
         [HttpPut]
@@ -60,5 +63,21 @@ namespace RunningApp.Controllers
             }
             return Ok(deleteUser);
         }
+
+        private User CreateUserFromDTO(UserDTO dto)
+        {
+            var user = new User();
+
+            user.UserName = dto.UserName ?? "";
+            user.FirstName = dto.FirstName ?? "";
+            user.LastName = dto.LastName ?? "";
+            user.Email = dto.Email ?? "";
+            user.Age = dto.Age;
+
+            return user;
+           
+
+        }
+
     }
 }
