@@ -1,11 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace RunningApp.Models
+﻿namespace RunningApp.Models
 {
     public class User
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         public string? UserName { get; set; }
 
@@ -16,8 +13,10 @@ namespace RunningApp.Models
       
         public int? Age { get; set; }
 
+        public List<Time>? Times { get; set; }
 
-        public User(int? id, string? userName, string? email, string? firstName, string? lastName, int? age)
+   
+         public User(int id, string? userName, string? email, string? firstName, string? lastName, int? age)
         {
             Id = id;
             UserName = userName;
@@ -25,6 +24,7 @@ namespace RunningApp.Models
             FirstName = firstName;
             LastName = lastName;
             Age = age;
+            
         }
         public User()
         {

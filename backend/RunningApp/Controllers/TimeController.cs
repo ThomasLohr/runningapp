@@ -13,14 +13,7 @@ namespace RunningApp.Controllers
     [ApiController]
     public class TimeController : ControllerBase
     {
-
         private TimeRepository _timeRepository;
-
-        //public TimeController(TimeRepository timeRepository)
-        //{
-        //    _timeRepository = timeRepository; 
-            
-        //}
         public TimeController(TimeRepository timeRepository)
         {
             _timeRepository = timeRepository;

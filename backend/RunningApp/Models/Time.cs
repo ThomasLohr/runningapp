@@ -1,24 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.Json.Serialization;
-
-namespace RunningApp.Models;
+﻿namespace RunningApp.Models;
 
 public partial class Time
 {
-  
-    public int Id { get; set; }
 
-    public decimal? Rundistance { get; set; }
+    public int Id { get; set; } 
+
+    public decimal? Rundistance { get; set; }  
 
     public string TotalTime { get; set; }
 
-    public Time(string totalTime, decimal runDistance)
+    public int UserId { get; set; }
+
+    public User User { get; set; }
+
+
+    public Time(string totalTime, decimal runDistance, int userId, User user)
     {
         TotalTime = totalTime;
         Rundistance = runDistance;
+        UserId = userId;
+        User = user;
     }
 
     public Time()
