@@ -1,4 +1,6 @@
-﻿namespace RunningApp.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace RunningApp.Models;
 
 public partial class Time
 {
@@ -10,7 +12,7 @@ public partial class Time
     public string TotalTime { get; set; }
 
     public int UserId { get; set; }
-
+   
     public User User { get; set; }
 
 

@@ -64,13 +64,13 @@ namespace RunningApp.Controllers
         private Time CreateTimeFromDTO(TimeDTO dto)
         {
             var time = new Time();
-
-            time.TotalTime = dto.TotalTime ?? "";
-            time.Rundistance= dto.Rundistance ?? 0;
-
+            {
+                time.UserId = dto.UserId;
+                time.TotalTime = dto.TotalTime ?? "";
+                time.Rundistance = dto.Rundistance ?? 0;
+            }
             return time;
         }
-
     }
 }
 

@@ -1,15 +1,11 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
+  content: [
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   theme: {
     extend: {},
   },
   variants: {},
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
+  plugins: [],
 }

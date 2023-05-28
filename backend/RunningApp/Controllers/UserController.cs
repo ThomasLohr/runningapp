@@ -13,12 +13,12 @@ namespace RunningApp.Controllers
     public class UserController : ControllerBase
     {
         private UserRepository _userRepository;
-        
+
         public UserController(UserRepository userRepository)
         {
             _userRepository = userRepository;
         }
-     
+
         [HttpGet]
         public IEnumerable<User> GetUsers()
         {
@@ -35,7 +35,7 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser(UserDTO dto)
+        public IActionResult CreateUser([FromBody] UserDTO dto)
         {
             var user = CreateUserFromDTO(dto);
             var createUser = _userRepository.CreateUser(user);
@@ -48,8 +48,6 @@ namespace RunningApp.Controllers
         {
             _userRepository.UpdateUser(user);
             return Ok(user);
-
-
         }
 
         [HttpDelete("{id}")]
@@ -67,17 +65,15 @@ namespace RunningApp.Controllers
         private User CreateUserFromDTO(UserDTO dto)
         {
             var user = new User();
+            {
+                user.UserName = dto.UserName ?? "";
+                user.FirstName = dto.FirstName ?? "";
+                user.LastName = dto.LastName ?? "";
+                user.Email = dto.Email ?? "";
+                user.Age = dto.Age;
 
-            user.UserName = dto.UserName ?? "";
-            user.FirstName = dto.FirstName ?? "";
-            user.LastName = dto.LastName ?? "";
-            user.Email = dto.Email ?? "";
-            user.Age = dto.Age;
-
+            }
             return user;
-           
-
         }
-
     }
 }

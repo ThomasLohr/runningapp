@@ -15,17 +15,6 @@
 
         public List<Time>? Times { get; set; }
 
-   
-         public User(int id, string? userName, string? email, string? firstName, string? lastName, int? age)
-        {
-            Id = id;
-            UserName = userName;
-            Email = email;
-            FirstName = firstName;
-            LastName = lastName;
-            Age = age;
-            
-        }
         public User()
         {
 
