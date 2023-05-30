@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using RunningApp.DTO;
 using RunningApp.Models;
 using RunningApp.Repository;
+using RunningApp.Services;
 using System.Net.WebSockets;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,23 +14,23 @@ namespace RunningApp.Controllers
     [ApiController]
     public class TimeController : ControllerBase
     {
-        private TimeRepository _timeRepository;
-        public TimeController(TimeRepository timeRepository)
+        private TimeService _timeService;
+        public TimeController(TimeService timeService)
         {
-            _timeRepository = timeRepository;
+            _timeService = timeService;
         }
 
         [HttpGet]
-        public IEnumerable<Time> GetTimes()
+        public IEnumerable<TimeDTO> GetTimes()
         {
-            return _timeRepository.GetTimes();
+            return _timeService.GetTimes();
         }
 
         [HttpGet]
         [Route("{id}")]
         public IActionResult GetTime(int id)
         {
-            var getTime = _timeRepository.GetTime(id);
+            var getTime = _timeService.GetTime(id);
 
             return Ok(getTime);
         }
@@ -37,40 +38,30 @@ namespace RunningApp.Controllers
         [HttpPost]
         public IActionResult CreateTime(TimeDTO dto)
         {
-            var time = CreateTimeFromDTO(dto);
-            var createTime = _timeRepository.CreateTime(time);
+            
+            var createTime = _timeService.CreateTime(dto);
            
-            return Ok(createTime); 
+            return Ok(); 
         }
        
         [HttpDelete]
         public IActionResult DeleteTime(int? id)
         {
-            var timeToBeDeleted = _timeRepository.DeleteTime(id);
+            var timeToBeDeleted = _timeService.DeleteTime(id);
 
             return Ok(timeToBeDeleted);
 
         }
         [HttpPut]
         [Route("{id}")]
-        public IActionResult UpdateTime(Time time, int id)
+        public IActionResult UpdateTime(TimeDTO time, int id)
         {
-            var timeToBeUpdated = _timeRepository.UpdateTime(time, id);
+            var timeToBeUpdated = _timeService.UpdateTime(time, id);
 
             return Ok(timeToBeUpdated);
             
         }
 
-        private Time CreateTimeFromDTO(TimeDTO dto)
-        {
-            var time = new Time();
-            {
-                time.UserId = dto.UserId;
-                time.TotalTime = dto.TotalTime ?? "";
-                time.Rundistance = dto.Rundistance ?? 0;
-            }
-            return time;
-        }
     }
 }
 
