@@ -30,6 +30,9 @@ namespace RunningApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<decimal>("AveragePace")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<decimal?>("Rundistance")
                         .HasColumnType("decimal(18,2)");
 
