@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 using RunningApp.DTO;
 using RunningApp.Models;
 using RunningApp.Repository;
+using RunningApp.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,24 +14,26 @@ namespace RunningApp.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private UserRepository _userRepository;
+        
+        private readonly UserService userService;
 
-        public UserController(UserRepository userRepository)
+        public UserController(UserService userService)
         {
-            _userRepository = userRepository;
+            
+            this.userService = userService;
         }
 
         [HttpGet]
         public IEnumerable<User> GetUsers()
         {
-            return _userRepository.GetUsers();
+            return userService.GetUsers();
 
         }
 
         [HttpGet("{id}")]
         public IActionResult GetUser(int id)
         {
-            var getUser = _userRepository.GetUser(id);
+            var getUser = userService.GetUser(id);
 
             return Ok(getUser);
         }
@@ -37,8 +41,8 @@ namespace RunningApp.Controllers
         [HttpPost]
         public IActionResult CreateUser([FromBody] UserDTO dto)
         {
-            var user = CreateUserFromDTO(dto);
-            var createUser = _userRepository.CreateUser(user);
+
+            var createUser = userService.CreateUser(dto);
 
             return Ok(createUser);
         }
@@ -46,34 +50,20 @@ namespace RunningApp.Controllers
         [HttpPut]
         public IActionResult UpdateUser(User user)
         {
-            _userRepository.UpdateUser(user);
+            userService.UpdateUser(user);
             return Ok(user);
         }
 
         [HttpDelete("{id}")]
         public IActionResult DeleteUser(int id)
         {
-            var deleteUser = _userRepository.DeleteUser(id);
+            var deleteUser = userService.DeleteUser(id);
 
             if (deleteUser == null)
             {
                 return NotFound();
             }
             return Ok(deleteUser);
-        }
-
-        private User CreateUserFromDTO(UserDTO dto)
-        {
-            var user = new User();
-            {
-                user.UserName = dto.UserName ?? "";
-                user.FirstName = dto.FirstName ?? "";
-                user.LastName = dto.LastName ?? "";
-                user.Email = dto.Email ?? "";
-                user.Age = dto.Age;
-
-            }
-            return user;
         }
     }
 }

@@ -30,9 +30,6 @@ namespace RunningApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<decimal>("AveragePace")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<decimal?>("Rundistance")
                         .HasColumnType("decimal(18,2)");
 
@@ -45,8 +42,6 @@ namespace RunningApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Times");
                 });
 
@@ -58,40 +53,12 @@ namespace RunningApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("Age")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("RunningApp.Models.Time", b =>
-                {
-                    b.HasOne("RunningApp.Models.User", "User")
-                        .WithMany("Times")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("RunningApp.Models.User", b =>
-                {
-                    b.Navigation("Times");
                 });
 #pragma warning restore 612, 618
         }

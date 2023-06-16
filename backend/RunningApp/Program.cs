@@ -24,6 +24,7 @@ builder.Services.AddDbContext<RunningDbContext>(options =>
 builder.Services.AddTransient<TimeRepository, TimeRepository>();
 builder.Services.AddTransient<UserRepository, UserRepository>();
 builder.Services.AddTransient<TimeService, TimeService>();
+builder.Services.AddTransient<UserService, UserService>();
 
 
 builder.Services.AddCors(options =>

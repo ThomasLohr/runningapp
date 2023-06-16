@@ -34,11 +34,7 @@ public partial class RunningDbContext : DbContext
         modelBuilder.Entity<User>()
                 .HasKey(s => s.Id);
 
-        modelBuilder.Entity<User>()
-            .HasMany(u => u.Times)
-            .WithOne(t => t.User)
-            .HasForeignKey(t => t.UserId)
-            .IsRequired();
+            
             
         OnModelCreatingPartial(modelBuilder);
     }
