@@ -31,9 +31,9 @@ namespace RunningApp.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetUser(int id)
+        public IActionResult GetUserById(int id)
         {
-            var getUser = userService.GetUser(id);
+            var getUser = userService.GetUserById(id);
 
             return Ok(getUser);
         }
@@ -41,7 +41,6 @@ namespace RunningApp.Controllers
         [HttpPost]
         public IActionResult CreateUser([FromBody] UserDTO dto)
         {
-
             var createUser = userService.CreateUser(dto);
 
             return Ok(createUser);
