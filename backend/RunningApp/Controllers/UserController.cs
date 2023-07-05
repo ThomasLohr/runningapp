@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
+﻿using Microsoft.AspNetCore.Mvc;
 using RunningApp.DTO;
 using RunningApp.Models;
-using RunningApp.Repository;
 using RunningApp.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -39,7 +36,7 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser([FromBody] UserDTO dto)
+        public IActionResult CreateUser(UserDTO dto)
         {
             var createUser = userService.CreateUser(dto);
 

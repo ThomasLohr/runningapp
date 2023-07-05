@@ -22,6 +22,34 @@ namespace RunningApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("RunningApp.Models.Activity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Activities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Running"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Cycling"
+                        });
+                });
+
             modelBuilder.Entity("RunningApp.Models.Time", b =>
                 {
                     b.Property<int>("Id")
@@ -31,7 +59,7 @@ namespace RunningApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<decimal?>("Rundistance")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(8,4)");
 
                     b.Property<string>("TotalTime")
                         .IsRequired()

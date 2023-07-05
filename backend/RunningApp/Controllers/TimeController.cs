@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using RunningApp.DTO;
-using RunningApp.Models;
-using RunningApp.Repository;
 using RunningApp.Services;
-using System.Net.WebSockets;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,7 +10,7 @@ namespace RunningApp.Controllers
     [ApiController]
     public class TimeController : ControllerBase
     {
-        private TimeService _timeService;
+        private readonly TimeService _timeService;
         public TimeController(TimeService timeService)
         {
             _timeService = timeService;

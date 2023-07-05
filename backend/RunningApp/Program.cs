@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using RunningApp.Models;
 using RunningApp.Repository;
+using RunningApp.Repositorys;
 using RunningApp.Services;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -25,6 +25,8 @@ builder.Services.AddTransient<TimeRepository, TimeRepository>();
 builder.Services.AddTransient<UserRepository, UserRepository>();
 builder.Services.AddTransient<TimeService, TimeService>();
 builder.Services.AddTransient<UserService, UserService>();
+builder.Services.AddTransient<ActivityService, ActivityService>();
+builder.Services.AddTransient<ActivityRepository, ActivityRepository>();
 
 
 builder.Services.AddCors(options =>
