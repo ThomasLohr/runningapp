@@ -25,7 +25,7 @@ public partial class RunningDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=RunningDb;;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=RunningDb;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -35,21 +35,26 @@ public partial class RunningDbContext : DbContext
                 .HasColumnType("decimal(8,4)");
 
         modelBuilder.Entity<User>()
-                .HasKey(s => s.Id);
+                .HasKey(u => u.Id);
 
         modelBuilder.Entity<Activity>()
-            .HasKey(s => s.Id);
+                .HasKey(a => a.Id);
+
+        modelBuilder.Entity<User>()
+                .HasMany(t => t.Times)
+                .WithOne(t => t.User)
+                .HasForeignKey(t => t.UserId)
+                .IsRequired();
+                                    
+        
+                
 
         modelBuilder.Entity<Activity>()
-            .HasData(new Activity { Id = 1, Name = "Running" },
-            new Activity { Id = 2, Name = "Cycling" });
+                .HasKey(a => a.Id);
 
-
-
-
-
-
-
+        modelBuilder.Entity<Activity>()
+                .HasData(new Activity { Id = 1, Name = "Running" },
+                         new Activity { Id = 2, Name = "Cycling" });
 
 
 

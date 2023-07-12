@@ -44,10 +44,11 @@ namespace RunningApp.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateUser(User user)
+        public IActionResult UpdateUser(UserDto userName)
         {
-            userService.UpdateUser(user);
-            return Ok(user);
+            var update = userService.UpdateUser(userName);
+            return Ok(update);
+
         }
 
         [HttpDelete("{id}")]

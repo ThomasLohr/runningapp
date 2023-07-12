@@ -15,6 +15,13 @@ public partial class Time
 
     public int UserId { get; set; }
 
+    public int ActivityId { get; set; }
+
+    public User User { get; set; } = null!;
+
+    public Activity Activity { get; set; }
+
+
     public Time()
     {
 

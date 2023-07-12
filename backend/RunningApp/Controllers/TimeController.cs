@@ -37,7 +37,7 @@ namespace RunningApp.Controllers
             
             var createTime = _timeService.CreateTime(dto);
            
-            return Ok(); 
+            return Ok(createTime); 
         }
        
         [HttpDelete]
@@ -50,11 +50,11 @@ namespace RunningApp.Controllers
         }
         [HttpPut]
         [Route("{id}")]
-        public IActionResult UpdateTime(TimeDto time, int id)
+        public IActionResult UpdateTime(TimeDto timeDto, int id)
         {
-            var timeToBeUpdated = _timeService.UpdateTime(time, id);
+            var updatedTime = _timeService.UpdateTime(timeDto, id);
 
-            return Ok(timeToBeUpdated);
+            return Ok(updatedTime);
             
         }
 
