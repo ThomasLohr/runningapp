@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RunningApp.DTO;
+using RunningApp.Dto;
 using RunningApp.Models;
 using RunningApp.Services;
 
@@ -36,7 +36,7 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser(UserDTO dto)
+        public IActionResult CreateUser(UserDto dto)
         {
             var createUser = userService.CreateUser(dto);
 

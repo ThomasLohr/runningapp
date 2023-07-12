@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RunningApp.DTO;
+using RunningApp.Dto;
 using RunningApp.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -17,7 +17,7 @@ namespace RunningApp.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<TimeDTO> GetTimes()
+        public IEnumerable<TimeDto> GetTimes()
         {
             return _timeService.GetTimes();
         }
@@ -32,7 +32,7 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTime(TimeDTO dto)
+        public IActionResult CreateTime(TimeDto dto)
         {
             
             var createTime = _timeService.CreateTime(dto);
@@ -50,7 +50,7 @@ namespace RunningApp.Controllers
         }
         [HttpPut]
         [Route("{id}")]
-        public IActionResult UpdateTime(TimeDTO time, int id)
+        public IActionResult UpdateTime(TimeDto time, int id)
         {
             var timeToBeUpdated = _timeService.UpdateTime(time, id);
 

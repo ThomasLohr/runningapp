@@ -1,7 +1,7 @@
 ﻿
-namespace RunningApp.DTO
+namespace RunningApp.Dto
 {
-    public class TimeDTO
+    public class TimeDto
     {
         public int UserId { get; set; }
 
