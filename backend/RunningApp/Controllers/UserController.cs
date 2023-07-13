@@ -36,7 +36,7 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser(UserDto dto)
+        public IActionResult CreateUser(CreateUserDto dto)
         {
             var createUser = userService.CreateUser(dto);
 
@@ -44,9 +44,9 @@ namespace RunningApp.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateUser(UserDto userName)
+        public IActionResult UpdateUser(UpdateUserDto updateUserDto)
         {
-            var update = userService.UpdateUser(userName);
+            var update = userService.UpdateUser(updateUserDto);
             return Ok(update);
 
         }
