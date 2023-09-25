@@ -21,9 +21,9 @@ namespace RunningApp.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<User> GetUsers()
+        public IEnumerable<User> GetAll()
         {
-            return userService.GetUsers();
+            return userService.GetAll();
 
         }
 
@@ -36,25 +36,25 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser(CreateUserDto dto)
+        public IActionResult Create(CreateUserDto dto)
         {
-            var createUser = userService.CreateUser(dto);
+            var createUser = userService.Create(dto);
 
             return Ok(createUser);
         }
 
         [HttpPut]
-        public IActionResult UpdateUser(UpdateUserDto updateUserDto)
+        public IActionResult Update(UpdateUserDto updateUserDto)
         {
-            var update = userService.UpdateUser(updateUserDto);
+            var update = userService.Update(updateUserDto);
             return Ok(update);
 
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteUser(int id)
+        public IActionResult Delete(int id)
         {
-            var deleteUser = userService.DeleteUser(id);
+            var deleteUser = userService.Delete(id);
 
             if (deleteUser == null)
             {

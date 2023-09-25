@@ -17,9 +17,9 @@ namespace RunningApp.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<TimeDto> GetTimes()
+        public IEnumerable<TimeDto> GetAll()
         {
-            return _timeService.GetTimes();
+            return _timeService.GetAll();
         }
 
         [HttpGet]
@@ -32,27 +32,27 @@ namespace RunningApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTime(TimeDto dto)
+        public IActionResult Create(TimeDto dto)
         {
             
-            var createTime = _timeService.CreateTime(dto);
+            var createTime = _timeService.Create(dto);
            
             return Ok(createTime); 
         }
        
         [HttpDelete]
-        public IActionResult DeleteTime(int? id)
+        public IActionResult Delete(int? id)
         {
-            var timeToBeDeleted = _timeService.DeleteTime(id);
+            var timeToBeDeleted = _timeService.Delete(id);
 
             return Ok(timeToBeDeleted);
 
         }
         [HttpPut]
         [Route("{id}")]
-        public IActionResult UpdateTime(TimeDto timeDto, int id)
+        public IActionResult Update(TimeDto timeDto, int id)
         {
-            var updatedTime = _timeService.UpdateTime(timeDto, id);
+            var updatedTime = _timeService.Update(timeDto, id);
 
             return Ok(updatedTime);
             
