@@ -41,7 +41,7 @@ namespace RunningApp.Controllers
         }
        
         [HttpDelete]
-        public IActionResult Delete(int? id)
+        public IActionResult Delete(int id)
         {
             var timeToBeDeleted = _timeService.Delete(id);
 
