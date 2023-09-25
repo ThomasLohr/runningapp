@@ -21,12 +21,12 @@ builder.Services.AddDbContext<RunningDbContext>(options =>
 
     });
 });
-builder.Services.AddTransient<TimeRepository, TimeRepository>();
+builder.Services.AddTransient<ITimeRepository, TimeRepository>();
 builder.Services.AddTransient<UserRepository, UserRepository>();
 builder.Services.AddTransient<TimeService, TimeService>();
 builder.Services.AddTransient<UserService, UserService>();
 builder.Services.AddTransient<ActivityService, ActivityService>();
-builder.Services.AddTransient<ActivityRepository, ActivityRepository>();
+builder.Services.AddTransient<IActivityRepository, ActivityRepository>();
 
 
 builder.Services.AddCors(options =>
